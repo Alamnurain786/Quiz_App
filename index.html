@@ -10,14 +10,19 @@
 
 <body>
     <div class="app">
-        <h1>Simple Quiz</h1>
+        <h1>Simple Quiz <span id="score">Score: 0</span></h1>
+        <progress id="quiz-progress" value="0" max="10"></progress>
         <div class="quiz">
-            <h2 id="question">Question are Here</h2>
+            <span>Select The category
+                <select id="category"></select>
+            </span>
+            <h2 id="timer">Time left: 30</h2>
+            <h2 id="question"></h2>
             <div id="answer-buttons">
-                <button class="btn">Answer 1</button>
+                <!-- <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn">Answer 4</button> -->
             </div>
             <button id="next-btn">Next</button>
         </div>
